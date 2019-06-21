@@ -18,5 +18,46 @@
         "id": 4,
         "name": "Lowry",
         "image": "./images/Lowy1.jpeg"
+    },
+    {
+        "id": 5,
+        "name": "Jeremy",
+        "image": "./images/jeremy1.jpeg"
+    },
+    {
+        "id": 6,
+        "name": "Marc",
+        "image": "./images/marc1.jpeg"
+    },
+    {
+        "id": 7,
+        "name": "Marc",
+        "image": "./images/marc2.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Fred",
+        "image": "./images/fred1.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Norman",
+        "image": "./images/norman1.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Serge",
+        "image": "./images/serge1.png"
+    },
+    {
+        "id": 11,
+        "name": "Dewan",
+        "image": "./images/dewan1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Dewan",
+        "image": "./images/dewan2.jpg"
     }
+    
 ]

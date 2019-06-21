@@ -3,11 +3,15 @@ import "./style.css"
 // <img alt="sbsp" className="click-item" src="https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014"></img>
 
 function Main(props) {
-    console.log(props);
-    console.log(props.players);
     return (
         <main className="container">
-            <img alt="sbsp" className="click-item" src="./images/kawhi1.jpeg"></img>
+            {props.players
+                .sort(() => Math.random() - 0.5)
+                .map((player) => {
+                return(
+                <img onClick={() => props.clickHandler(player)} alt="sbsp" data-id={player.name} className="click-item" src={player.image}></img>
+                )
+            })}
         </main>
         
     );

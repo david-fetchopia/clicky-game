@@ -12,8 +12,23 @@ class App extends Component {
 
   clickHandler = card => {
     let score = this.state.score;
-    console.log("this is the clicked score: " + score);
-    console.log(card);
+    let guessedArray = this.state.guessArray;
+
+    if (guessedArray[card.name]) {
+      alert("You already guessed " + card.name);
+      this.setState({
+        topScore: Math.max(this.state.score, this.state.topScore),
+        guessArray: [],
+        score: 0
+      });
+
+    } else {
+      guessedArray[card.name] = true;
+      this.setState({
+        guessArray: guessedArray,
+        score: ++score
+      })
+    }
   }
 
   render(){
@@ -26,7 +41,7 @@ class App extends Component {
             </li>
             <li>Click an image to begin!</li>
             <li>
-              "Score"
+              Score: {this.state.score} | Top Score: {this.state.topScore}
             </li>
           </ul>
         </nav>
@@ -34,7 +49,8 @@ class App extends Component {
           <h1>Toronto Raptors Clicky Game!</h1>
           <h2>Click on an image to earn points, but don't click on any more than once!</h2>
         </header>
-        <Main players={players}/>
+        <Main players={players}
+              clickHandler={this.clickHandler}/>
 
         <footer className="footer">
           <div className="bottom">
