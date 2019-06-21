@@ -2,22 +2,22 @@
     {
         "id": 1,
         "name": "Kawhi",
-        "image": "./images/Kawhi1.jpeg"
+        "image": "./images/kawhi1.jpeg"
     },
     {
         "id": 2,
         "name": "Kawhi",
-        "image": "./images/Kawhi2.jpg"
+        "image": "./images/kawhi2.jpg"
     },
     {
         "id": 3,
         "name": "Pascal",
-        "image": "./images/Pascal1.jpeg"
+        "image": "./images/pascal1.jpeg"
     },
     {
         "id": 4,
         "name": "Lowry",
-        "image": "./images/Lowy1.jpeg"
+        "image": "./images/lowy1.jpeg"
     },
     {
         "id": 5,
